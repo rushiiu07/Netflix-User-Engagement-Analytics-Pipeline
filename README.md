@@ -1,47 +1,157 @@
-# 🎬 Netflix-Style Synthetic Dataset
+# 🎬 Netflix User Engagement Analytics Pipeline
 
-## 📊 Dataset Overview
-This synthetic dataset simulates a Netflix-style streaming platform with realistic user behavior, content catalog, and engagement metrics. Perfect for machine learning, data science, and analytics projects.
+## 🏗️ ETL Architecture
+```mermaid
+graph TD
+    %% Data Sources
+    A[Raw Data Sources] --> |Extract| B[Bronze Layer]
+    
+    subgraph Sources[Data Sources]
+        A1[users.csv]
+        A2[movies.csv]
+        A3[watch_history.csv]
+        A4[recommendation_logs.csv]
+        A5[search_logs.csv]
+        A6[reviews.csv]
+    end
+    
+    %% Bronze Layer
+    subgraph Bronze[Bronze Layer - Raw Data]
+        B1[Data Ingestion]
+        B2[Quality Checks]
+        B3[Data Profiling]
+        B4[Raw Storage]
+    end
+    
+    %% Silver Layer
+    subgraph Silver[Silver Layer - Transformed Data]
+        C1[Data Cleaning]
+        C2[Data Validation]
+        C3[Feature Engineering]
+        C4[Data Integration]
+    end
+    
+    %% Gold Layer
+    subgraph Gold[Gold Layer - Analytics Ready]
+        D1[User Engagement KPIs]
+        D2[Content Performance]
+        D3[Recommendation Engine]
+        D4[Business Metrics]
+    end
+    
+    %% Connections
+    Sources --> B1
+    B1 --> B2 --> B3 --> B4
+    B4 --> |Transform| C1
+    C1 --> C2 --> C3 --> C4
+    C4 --> |Aggregate| D1
+    C4 --> |Analyze| D2
+    C4 --> |Model| D3
+    C4 --> |Report| D4
+    
+    %% Visualization Layer
+    D1 & D2 & D3 & D4 --> E[Visualization Dashboard]
 
-### 🎯 Key Features
-- **210,290+ total records** across 6 interconnected tables
-- **Realistic data quality issues** (missing values, duplicates, outliers)
-- **Time-series data** spanning 2024-2025
-- **USA/Canada regional focus**
-- **ML-ready structure** for multiple use cases
+style Sources fill:#f9f,stroke:#333,stroke-width:2px
+style Bronze fill:#FFB266,stroke:#333,stroke-width:2px
+style Silver fill:#99CCFF,stroke:#333,stroke-width:2px
+style Gold fill:#FFD700,stroke:#333,stroke-width:2px
+```
+
+## 📊 Project Overview
+This project implements a robust data pipeline for analyzing Netflix-style streaming platform data, featuring user behavior analytics, content performance metrics, and engagement patterns. The pipeline processes data through Bronze, Silver, and Gold layers, providing actionable insights for business decisions.
+
+## 🔄 Pipeline Architecture Overview
+
+### 1. Bronze Layer (Data Ingestion)
+- **Raw Data Ingestion**: Automated ingestion of CSV files
+- **Data Profiling**: Automated quality checks and statistics
+- **Schema Validation**: Basic data type and structure validation
+- **Quality Monitoring**: Tracking data completeness and validity
+
+### 2. Silver Layer (Data Processing)
+- **Data Cleaning**: Handling missing values, duplicates, and outliers
+- **Data Integration**: Merging related datasets
+- **Feature Engineering**: Creating derived metrics and indicators
+- **Data Validation**: Enforcing business rules and constraints
+
+### 3. Gold Layer (Analytics)
+- **KPI Computation**: Calculating business metrics
+- **Aggregations**: User and content-level summaries
+- **ML Features**: Prepared datasets for modeling
+- **Business Metrics**: Ready-to-use analytics views
+
+### 🎯 Key Metrics
+- **User Engagement Scores**
+- **Content Performance Analytics**
+- **Viewing Pattern Analysis**
+- **Recommendation Engine Effectiveness**
+- **Platform Usage Insights**
 
 ---
 
-## 📁 Dataset Structure
+## 📁 Data Pipeline Structure
 
-| File | Rows | Description |
-|------|------|-------------|
-| `users.csv` | 10,300 | User demographics, subscription plans, regional data |
-| `movies.csv` | 1,040 | Movies/shows with metadata, genres, ratings |
-| `watch_history.csv` | 105,000 | Viewing sessions with device, quality, progress data |
-| `recommendation_logs.csv` | 52,000 | Recommendation engine logs with click-through rates |
-| `search_logs.csv` | 26,500 | User search queries and interaction patterns |
-| `reviews.csv` | 15,450 | User reviews with sentiment analysis and ratings |
+### Source Data (210,290+ records)
+| Dataset | Records | Purpose |
+|---------|---------|----------|
+| `users.csv` | 10,300 | Core user information and demographics |
+| `movies.csv` | 1,040 | Content catalog and metadata |
+| `watch_history.csv` | 105,000 | User viewing behavior tracking |
+| `recommendation_logs.csv` | 52,000 | Recommendation system performance |
+| `search_logs.csv` | 26,500 | Search behavior analysis |
+| `reviews.csv` | 15,450 | User feedback and sentiment |
+
+### Pipeline Layers
+
+#### 🥉 Bronze Layer (Raw)
+- Raw data storage
+- Data quality reports
+- Schema validation results
+- Ingestion metadata
+
+#### 🥈 Silver Layer (Processed)
+- Cleaned datasets
+- Integrated views
+- Feature engineered tables
+- Validated data models
+
+#### 🥇 Gold Layer (Analytics)
+- User engagement metrics
+- Content performance KPIs
+- Recommendation insights
+- Business analytics views
 
 ---
 
-## 🎪 Data Quality Features (Teaching-Ready!)
+## 🛠️ Pipeline Data Quality Management
 
-### Missing Values (10-15% across key columns)
-- Realistic patterns reflecting real-world data collection
-- Various missing mechanisms (MCAR, MAR, MNAR)
-- Perfect for imputation technique practice
+### Bronze Layer Quality Checks
+- **Completeness Monitoring**: Track missing values (10-15% across columns)
+- **Duplicate Detection**: Identify duplicate records (3-6% per table)
+- **Schema Compliance**: Validate data types and structures
+- **Data Freshness**: Monitor ingestion timestamps
 
-### Duplicates (3-6% per table)
-- Natural duplicates from user behavior
-- System-generated duplicates from data processing
-- Great for deduplication algorithm testing
+### Silver Layer Data Cleaning
+- **Missing Value Handling**:
+  - Implement imputation strategies
+  - Track imputation quality metrics
+  - Document missing patterns
+- **Deduplication Process**:
+  - Remove system-generated duplicates
+  - Handle natural duplicates with business rules
+  - Maintain duplicate resolution logs
+- **Anomaly Detection & Handling**:
+  - Age validation (5-110 years range)
+  - Spending patterns ($200-1000/month)
+  - Viewing duration analysis (5-13 hours)
+  - Content duration verification
 
-### Outliers & Anomalies
-- **Age outliers**: Very young/old users (5-110 years)
-- **Spending outliers**: High-value customers ($200-1000/month)
-- **Binge watchers**: Sessions 5-13 hours long
-- **Duration anomalies**: 10-minute movies, 10-hour shows
+### Gold Layer Quality Assurance
+- **KPI Validation**: Ensure metric accuracy
+- **Data Consistency**: Cross-reference checks
+- **Business Rule Compliance**: Validate against rules
+- **Quality Reporting**: Generate quality scorecards
 
 ---
 
