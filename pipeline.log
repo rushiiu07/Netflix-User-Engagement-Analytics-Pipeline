@@ -1,0 +1,315 @@
+2025-10-31 14:52:01,097 - __main__ - INFO - Starting Netflix User Engagement Analytics Pipeline
+2025-10-31 14:52:01,099 - __main__ - INFO - Step 1: Ingesting data
+2025-10-31 14:52:01,099 - data_ingestion - INFO - Reading CSV file from data/raw/netflix_userbase.csv
+2025-10-31 14:52:01,101 - data_ingestion - ERROR - Error reading CSV file: [Errno 13] Permission denied: 'data/raw/netflix_userbase.csv'
+2025-10-31 14:52:01,101 - __main__ - ERROR - Pipeline failed: [Errno 13] Permission denied: 'data/raw/netflix_userbase.csv'
+2025-10-31 14:58:13,777 - __main__ - INFO - Starting Netflix User Engagement Analytics Pipeline
+2025-10-31 14:58:13,830 - __main__ - ERROR - Pipeline failed: expected str, bytes or os.PathLike object, not dict
+2025-10-31 15:01:01,426 - __main__ - INFO - Starting Netflix User Engagement Analytics Pipeline
+2025-10-31 15:01:01,426 - __main__ - INFO - Step 1: Creating Bronze Layer
+2025-10-31 15:01:01,573 - data_lake_processor - INFO - Processed users to bronze layer: 10300 records
+2025-10-31 15:01:01,595 - data_lake_processor - INFO - Processed movies to bronze layer: 1040 records
+2025-10-31 15:01:01,852 - data_lake_processor - INFO - Processed watch_history to bronze layer: 105000 records
+2025-10-31 15:01:01,922 - data_lake_processor - INFO - Processed reviews to bronze layer: 15450 records
+2025-10-31 15:01:01,999 - data_lake_processor - INFO - Processed search_logs to bronze layer: 26500 records
+2025-10-31 15:01:02,142 - data_lake_processor - INFO - Processed recommendation_logs to bronze layer: 52000 records
+2025-10-31 15:01:02,157 - __main__ - INFO - Step 2: Performing data quality assessment
+2025-10-31 15:01:02,181 - __main__ - ERROR - Pipeline failed: 'QUALITY_THRESHOLDS'
+2025-10-31 15:03:07,002 - __main__ - INFO - Starting Netflix User Engagement Analytics Pipeline
+2025-10-31 15:03:07,002 - __main__ - INFO - Step 1: Creating Bronze Layer
+2025-10-31 15:03:07,112 - data_lake_processor - INFO - Processed users to bronze layer: 10300 records
+2025-10-31 15:03:07,126 - data_lake_processor - INFO - Processed movies to bronze layer: 1040 records
+2025-10-31 15:03:07,400 - data_lake_processor - INFO - Processed watch_history to bronze layer: 105000 records
+2025-10-31 15:03:07,473 - data_lake_processor - INFO - Processed reviews to bronze layer: 15450 records
+2025-10-31 15:03:07,546 - data_lake_processor - INFO - Processed search_logs to bronze layer: 26500 records
+2025-10-31 15:03:07,671 - data_lake_processor - INFO - Processed recommendation_logs to bronze layer: 52000 records
+2025-10-31 15:03:07,671 - __main__ - INFO - Step 2: Performing data quality assessment
+2025-10-31 15:03:07,712 - __main__ - ERROR - Pipeline failed: 'VALIDATION_RULES'
+2025-10-31 15:07:09,433 - __main__ - INFO - Starting Netflix User Engagement Analytics Pipeline
+2025-10-31 15:07:09,433 - __main__ - INFO - Step 1: Creating Bronze Layer
+2025-10-31 15:07:09,540 - data_lake_processor - INFO - Processed users to bronze layer: 10300 records
+2025-10-31 15:07:09,564 - data_lake_processor - INFO - Processed movies to bronze layer: 1040 records
+2025-10-31 15:07:09,819 - data_lake_processor - INFO - Processed watch_history to bronze layer: 105000 records
+2025-10-31 15:07:09,877 - data_lake_processor - INFO - Processed reviews to bronze layer: 15450 records
+2025-10-31 15:07:09,988 - data_lake_processor - INFO - Processed search_logs to bronze layer: 26500 records
+2025-10-31 15:07:10,116 - data_lake_processor - INFO - Processed recommendation_logs to bronze layer: 52000 records
+2025-10-31 15:07:10,116 - __main__ - INFO - Step 2: Performing data quality assessment
+2025-10-31 15:07:10,144 - __main__ - ERROR - Pipeline failed: list indices must be integers or slices, not str
+2025-10-31 15:25:54,067 - __main__ - INFO - Starting Netflix User Engagement Analytics Pipeline
+2025-10-31 15:25:54,067 - __main__ - INFO - Step 1: Creating Bronze Layer
+2025-10-31 15:25:54,166 - data_lake_processor - INFO - Processed users to bronze layer: 10300 records
+2025-10-31 15:25:54,180 - data_lake_processor - INFO - Processed movies to bronze layer: 1040 records
+2025-10-31 15:25:54,432 - data_lake_processor - INFO - Processed watch_history to bronze layer: 105000 records
+2025-10-31 15:25:54,507 - data_lake_processor - INFO - Processed reviews to bronze layer: 15450 records
+2025-10-31 15:25:54,578 - data_lake_processor - INFO - Processed search_logs to bronze layer: 26500 records
+2025-10-31 15:25:54,751 - data_lake_processor - INFO - Processed recommendation_logs to bronze layer: 52000 records
+2025-10-31 15:25:54,751 - __main__ - INFO - Step 2: Performing data quality assessment
+2025-10-31 15:25:54,775 - __main__ - ERROR - Pipeline failed: list indices must be integers or slices, not str
+2025-10-31 16:02:54,644 - __main__ - INFO - Starting Netflix User Engagement Analytics Pipeline
+2025-10-31 16:02:54,644 - __main__ - INFO - Step 1: Creating Bronze Layer
+2025-10-31 16:02:54,734 - data_lake_processor - INFO - Processed users to bronze layer: 10300 records
+2025-10-31 16:02:54,749 - data_lake_processor - INFO - Processed movies to bronze layer: 1040 records
+2025-10-31 16:02:55,006 - data_lake_processor - INFO - Processed watch_history to bronze layer: 105000 records
+2025-10-31 16:02:55,067 - data_lake_processor - INFO - Processed reviews to bronze layer: 15450 records
+2025-10-31 16:02:55,137 - data_lake_processor - INFO - Processed search_logs to bronze layer: 26500 records
+2025-10-31 16:02:55,279 - data_lake_processor - INFO - Processed recommendation_logs to bronze layer: 52000 records
+2025-10-31 16:02:55,279 - __main__ - INFO - Step 2: Performing data quality assessment
+2025-10-31 16:02:55,301 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_160255.json
+2025-10-31 16:02:55,301 - __main__ - INFO - Quality report for users saved to: data\quality_reports\quality_report_20251031_160255.json
+2025-10-31 16:02:55,315 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_160255.json
+2025-10-31 16:02:55,315 - __main__ - INFO - Quality report for movies saved to: data\quality_reports\quality_report_20251031_160255.json
+2025-10-31 16:02:55,461 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_160255.json
+2025-10-31 16:02:55,461 - __main__ - INFO - Quality report for watch_history saved to: data\quality_reports\quality_report_20251031_160255.json
+2025-10-31 16:02:55,498 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_160255.json
+2025-10-31 16:02:55,499 - __main__ - INFO - Quality report for reviews saved to: data\quality_reports\quality_report_20251031_160255.json
+2025-10-31 16:02:55,537 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_160255.json
+2025-10-31 16:02:55,537 - __main__ - INFO - Quality report for search_logs saved to: data\quality_reports\quality_report_20251031_160255.json
+2025-10-31 16:02:55,613 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_160255.json
+2025-10-31 16:02:55,613 - __main__ - INFO - Quality report for recommendation_logs saved to: data\quality_reports\quality_report_20251031_160255.json
+2025-10-31 16:02:55,613 - __main__ - INFO - Step 3: Creating Silver Layer
+2025-10-31 16:02:55,636 - data_lake_processor - ERROR - Error processing silver layer: 'duration'
+2025-10-31 16:02:55,636 - __main__ - ERROR - Pipeline failed: 'duration'
+2025-10-31 16:06:15,215 - __main__ - INFO - Starting Netflix User Engagement Analytics Pipeline
+2025-10-31 16:06:15,215 - __main__ - INFO - Step 1: Creating Bronze Layer
+2025-10-31 16:06:15,301 - data_lake_processor - INFO - Processed users to bronze layer: 10300 records
+2025-10-31 16:06:15,315 - data_lake_processor - INFO - Processed movies to bronze layer: 1040 records
+2025-10-31 16:06:15,590 - data_lake_processor - INFO - Processed watch_history to bronze layer: 105000 records
+2025-10-31 16:06:15,682 - data_lake_processor - INFO - Processed reviews to bronze layer: 15450 records
+2025-10-31 16:06:15,756 - data_lake_processor - INFO - Processed search_logs to bronze layer: 26500 records
+2025-10-31 16:06:15,896 - data_lake_processor - INFO - Processed recommendation_logs to bronze layer: 52000 records
+2025-10-31 16:06:15,896 - __main__ - INFO - Step 2: Performing data quality assessment
+2025-10-31 16:06:15,972 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_160615.json
+2025-10-31 16:06:15,972 - __main__ - INFO - Quality report for users saved to: data\quality_reports\quality_report_20251031_160615.json
+2025-10-31 16:06:15,985 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_160615.json
+2025-10-31 16:06:15,987 - __main__ - INFO - Quality report for movies saved to: data\quality_reports\quality_report_20251031_160615.json
+2025-10-31 16:06:16,146 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_160616.json
+2025-10-31 16:06:16,146 - __main__ - INFO - Quality report for watch_history saved to: data\quality_reports\quality_report_20251031_160616.json
+2025-10-31 16:06:16,181 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_160616.json
+2025-10-31 16:06:16,182 - __main__ - INFO - Quality report for reviews saved to: data\quality_reports\quality_report_20251031_160616.json
+2025-10-31 16:06:16,221 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_160616.json
+2025-10-31 16:06:16,221 - __main__ - INFO - Quality report for search_logs saved to: data\quality_reports\quality_report_20251031_160616.json
+2025-10-31 16:06:16,310 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_160616.json
+2025-10-31 16:06:16,310 - __main__ - INFO - Quality report for recommendation_logs saved to: data\quality_reports\quality_report_20251031_160616.json
+2025-10-31 16:06:16,310 - __main__ - INFO - Step 3: Creating Silver Layer
+2025-10-31 16:06:16,322 - data_lake_processor - WARNING - Duration column not found in movies data. Adding default duration column.
+2025-10-31 16:06:16,365 - data_lake_processor - ERROR - Error processing silver layer: 'watch_duration'
+2025-10-31 16:06:16,365 - __main__ - ERROR - Pipeline failed: 'watch_duration'
+2025-10-31 16:10:43,650 - __main__ - INFO - Starting Netflix User Engagement Analytics Pipeline
+2025-10-31 16:10:43,650 - __main__ - INFO - Step 1: Creating Bronze Layer
+2025-10-31 16:10:43,746 - data_lake_processor - INFO - Processed users to bronze layer: 10300 records
+2025-10-31 16:10:43,762 - data_lake_processor - INFO - Processed movies to bronze layer: 1040 records
+2025-10-31 16:10:44,014 - data_lake_processor - INFO - Processed watch_history to bronze layer: 105000 records
+2025-10-31 16:10:44,081 - data_lake_processor - INFO - Processed reviews to bronze layer: 15450 records
+2025-10-31 16:10:44,151 - data_lake_processor - INFO - Processed search_logs to bronze layer: 26500 records
+2025-10-31 16:10:44,293 - data_lake_processor - INFO - Processed recommendation_logs to bronze layer: 52000 records
+2025-10-31 16:10:44,293 - __main__ - INFO - Step 2: Performing data quality assessment
+2025-10-31 16:10:44,322 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_161044.json
+2025-10-31 16:10:44,323 - __main__ - INFO - Quality report for users saved to: data\quality_reports\quality_report_20251031_161044.json
+2025-10-31 16:10:44,326 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_161044.json
+2025-10-31 16:10:44,326 - __main__ - INFO - Quality report for movies saved to: data\quality_reports\quality_report_20251031_161044.json
+2025-10-31 16:10:44,484 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_161044.json
+2025-10-31 16:10:44,484 - __main__ - INFO - Quality report for watch_history saved to: data\quality_reports\quality_report_20251031_161044.json
+2025-10-31 16:10:44,507 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_161044.json
+2025-10-31 16:10:44,507 - __main__ - INFO - Quality report for reviews saved to: data\quality_reports\quality_report_20251031_161044.json
+2025-10-31 16:10:44,553 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_161044.json
+2025-10-31 16:10:44,553 - __main__ - INFO - Quality report for search_logs saved to: data\quality_reports\quality_report_20251031_161044.json
+2025-10-31 16:10:44,620 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_161044.json
+2025-10-31 16:10:44,620 - __main__ - INFO - Quality report for recommendation_logs saved to: data\quality_reports\quality_report_20251031_161044.json
+2025-10-31 16:10:44,620 - __main__ - INFO - Step 3: Creating Silver Layer
+2025-10-31 16:10:44,636 - data_lake_processor - WARNING - Duration column not found in movies data. Adding default duration column.
+2025-10-31 16:10:44,687 - data_lake_processor - ERROR - Error processing silver layer: 'watch_duration'
+2025-10-31 16:10:44,688 - __main__ - ERROR - Pipeline failed: 'watch_duration'
+2025-10-31 16:13:18,755 - __main__ - INFO - Starting Netflix User Engagement Analytics Pipeline
+2025-10-31 16:13:18,758 - __main__ - INFO - Step 1: Creating Bronze Layer
+2025-10-31 16:13:18,849 - data_lake_processor - INFO - Processed users to bronze layer: 10300 records
+2025-10-31 16:13:18,862 - data_lake_processor - INFO - Processed movies to bronze layer: 1040 records
+2025-10-31 16:13:19,135 - data_lake_processor - INFO - Processed watch_history to bronze layer: 105000 records
+2025-10-31 16:13:19,192 - data_lake_processor - INFO - Processed reviews to bronze layer: 15450 records
+2025-10-31 16:13:19,262 - data_lake_processor - INFO - Processed search_logs to bronze layer: 26500 records
+2025-10-31 16:13:19,387 - data_lake_processor - INFO - Processed recommendation_logs to bronze layer: 52000 records
+2025-10-31 16:13:19,387 - __main__ - INFO - Step 2: Performing data quality assessment
+2025-10-31 16:13:19,422 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_161319.json
+2025-10-31 16:13:19,422 - __main__ - INFO - Quality report for users saved to: data\quality_reports\quality_report_20251031_161319.json
+2025-10-31 16:13:19,430 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_161319.json
+2025-10-31 16:13:19,430 - __main__ - INFO - Quality report for movies saved to: data\quality_reports\quality_report_20251031_161319.json
+2025-10-31 16:13:19,610 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_161319.json
+2025-10-31 16:13:19,611 - __main__ - INFO - Quality report for watch_history saved to: data\quality_reports\quality_report_20251031_161319.json
+2025-10-31 16:13:19,640 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_161319.json
+2025-10-31 16:13:19,640 - __main__ - INFO - Quality report for reviews saved to: data\quality_reports\quality_report_20251031_161319.json
+2025-10-31 16:13:19,680 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_161319.json
+2025-10-31 16:13:19,680 - __main__ - INFO - Quality report for search_logs saved to: data\quality_reports\quality_report_20251031_161319.json
+2025-10-31 16:13:19,757 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_161319.json
+2025-10-31 16:13:19,757 - __main__ - INFO - Quality report for recommendation_logs saved to: data\quality_reports\quality_report_20251031_161319.json
+2025-10-31 16:13:19,757 - __main__ - INFO - Step 3: Creating Silver Layer
+2025-10-31 16:13:19,774 - data_lake_processor - WARNING - Duration column not found in movies data. Adding default duration column.
+2025-10-31 16:13:19,813 - data_lake_processor - WARNING - watch_duration column not found in watch_history data. Adding default column.
+2025-10-31 16:13:19,857 - data_lake_processor - WARNING - completed column not found in watch_history data. Adding default column.
+2025-10-31 16:13:19,946 - data_lake_processor - INFO - Processed users to silver layer: 10000 records
+2025-10-31 16:13:19,956 - data_lake_processor - INFO - Processed movies to silver layer: 1000 records
+2025-10-31 16:13:20,071 - data_lake_processor - INFO - Processed watch_history to silver layer: 105000 records
+2025-10-31 16:13:20,071 - __main__ - INFO - Step 4: Creating Gold Layer
+2025-10-31 16:13:20,541 - data_lake_processor - ERROR - Error processing gold layer: 'user_id'
+2025-10-31 16:13:20,541 - __main__ - ERROR - Pipeline failed: 'user_id'
+2025-10-31 16:19:48,722 - __main__ - INFO - Starting Netflix User Engagement Analytics Pipeline
+2025-10-31 16:19:48,722 - __main__ - INFO - Step 1: Creating Bronze Layer
+2025-10-31 16:19:48,812 - data_lake_processor - INFO - Processed users to bronze layer: 10300 records
+2025-10-31 16:19:48,824 - data_lake_processor - INFO - Processed movies to bronze layer: 1040 records
+2025-10-31 16:19:49,079 - data_lake_processor - INFO - Processed watch_history to bronze layer: 105000 records
+2025-10-31 16:19:49,140 - data_lake_processor - INFO - Processed reviews to bronze layer: 15450 records
+2025-10-31 16:19:49,210 - data_lake_processor - INFO - Processed search_logs to bronze layer: 26500 records
+2025-10-31 16:19:49,334 - data_lake_processor - INFO - Processed recommendation_logs to bronze layer: 52000 records
+2025-10-31 16:19:49,334 - __main__ - INFO - Step 2: Performing data quality assessment
+2025-10-31 16:19:49,373 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_161949.json
+2025-10-31 16:19:49,373 - __main__ - INFO - Quality report for users saved to: data\quality_reports\quality_report_20251031_161949.json
+2025-10-31 16:19:49,381 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_161949.json
+2025-10-31 16:19:49,381 - __main__ - INFO - Quality report for movies saved to: data\quality_reports\quality_report_20251031_161949.json
+2025-10-31 16:19:49,536 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_161949.json
+2025-10-31 16:19:49,536 - __main__ - INFO - Quality report for watch_history saved to: data\quality_reports\quality_report_20251031_161949.json
+2025-10-31 16:19:49,582 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_161949.json
+2025-10-31 16:19:49,582 - __main__ - INFO - Quality report for reviews saved to: data\quality_reports\quality_report_20251031_161949.json
+2025-10-31 16:19:49,623 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_161949.json
+2025-10-31 16:19:49,624 - __main__ - INFO - Quality report for search_logs saved to: data\quality_reports\quality_report_20251031_161949.json
+2025-10-31 16:19:49,702 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_161949.json
+2025-10-31 16:19:49,703 - __main__ - INFO - Quality report for recommendation_logs saved to: data\quality_reports\quality_report_20251031_161949.json
+2025-10-31 16:19:49,703 - __main__ - INFO - Step 3: Creating Silver Layer
+2025-10-31 16:19:49,703 - data_lake_processor - WARNING - Duration column not found in movies data. Adding default duration column.
+2025-10-31 16:19:49,755 - data_lake_processor - WARNING - watch_duration column not found in watch_history data. Adding default column.
+2025-10-31 16:19:49,788 - data_lake_processor - WARNING - completed column not found in watch_history data. Adding default column.
+2025-10-31 16:19:49,835 - data_lake_processor - INFO - Processed users to silver layer: 10000 records
+2025-10-31 16:19:49,837 - data_lake_processor - INFO - Processed movies to silver layer: 1000 records
+2025-10-31 16:19:49,970 - data_lake_processor - INFO - Processed watch_history to silver layer: 105000 records
+2025-10-31 16:19:49,970 - __main__ - INFO - Step 4: Creating Gold Layer
+2025-10-31 16:19:50,467 - data_lake_processor - INFO - Generated engagement KPIs for 10000 users
+2025-10-31 16:19:50,600 - data_lake_processor - INFO - Generated content performance KPIs for 1000 movies
+2025-10-31 16:19:50,611 - data_lake_processor - WARNING - Empty recommendation logs or movies data
+2025-10-31 16:19:50,625 - data_lake_processor - ERROR - Error processing gold layer: "['join_date', 'subscription_type'] not in index"
+2025-10-31 16:19:50,625 - __main__ - ERROR - Pipeline failed: "['join_date', 'subscription_type'] not in index"
+2025-10-31 16:23:57,375 - __main__ - INFO - Starting Netflix User Engagement Analytics Pipeline
+2025-10-31 16:23:57,375 - __main__ - INFO - Step 1: Creating Bronze Layer
+2025-10-31 16:23:57,463 - data_lake_processor - INFO - Processed users to bronze layer: 10300 records
+2025-10-31 16:23:57,475 - data_lake_processor - INFO - Processed movies to bronze layer: 1040 records
+2025-10-31 16:23:57,748 - data_lake_processor - INFO - Processed watch_history to bronze layer: 105000 records
+2025-10-31 16:23:57,800 - data_lake_processor - INFO - Processed reviews to bronze layer: 15450 records
+2025-10-31 16:23:57,885 - data_lake_processor - INFO - Processed search_logs to bronze layer: 26500 records
+2025-10-31 16:23:58,061 - data_lake_processor - INFO - Processed recommendation_logs to bronze layer: 52000 records
+2025-10-31 16:23:58,061 - __main__ - INFO - Step 2: Performing data quality assessment
+2025-10-31 16:23:58,084 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_162358.json
+2025-10-31 16:23:58,084 - __main__ - INFO - Quality report for users saved to: data\quality_reports\quality_report_20251031_162358.json
+2025-10-31 16:23:58,102 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_162358.json
+2025-10-31 16:23:58,103 - __main__ - INFO - Quality report for movies saved to: data\quality_reports\quality_report_20251031_162358.json
+2025-10-31 16:23:58,249 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_162358.json
+2025-10-31 16:23:58,250 - __main__ - INFO - Quality report for watch_history saved to: data\quality_reports\quality_report_20251031_162358.json
+2025-10-31 16:23:58,271 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_162358.json
+2025-10-31 16:23:58,271 - __main__ - INFO - Quality report for reviews saved to: data\quality_reports\quality_report_20251031_162358.json
+2025-10-31 16:23:58,316 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_162358.json
+2025-10-31 16:23:58,316 - __main__ - INFO - Quality report for search_logs saved to: data\quality_reports\quality_report_20251031_162358.json
+2025-10-31 16:23:58,383 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_162358.json
+2025-10-31 16:23:58,383 - __main__ - INFO - Quality report for recommendation_logs saved to: data\quality_reports\quality_report_20251031_162358.json
+2025-10-31 16:23:58,383 - __main__ - INFO - Step 3: Creating Silver Layer
+2025-10-31 16:23:58,400 - data_lake_processor - WARNING - Duration column not found in movies data. Adding default duration column.
+2025-10-31 16:23:58,451 - data_lake_processor - WARNING - watch_duration column not found in watch_history data. Adding default column.
+2025-10-31 16:23:58,488 - data_lake_processor - WARNING - completed column not found in watch_history data. Adding default column.
+2025-10-31 16:23:58,521 - data_lake_processor - INFO - Processed users to silver layer: 10000 records
+2025-10-31 16:23:58,521 - data_lake_processor - INFO - Processed movies to silver layer: 1000 records
+2025-10-31 16:23:58,648 - data_lake_processor - INFO - Processed watch_history to silver layer: 105000 records
+2025-10-31 16:23:58,648 - __main__ - INFO - Step 4: Creating Gold Layer
+2025-10-31 16:23:59,147 - data_lake_processor - INFO - Generated engagement KPIs for 10000 users
+2025-10-31 16:23:59,169 - data_lake_processor - INFO - Successfully generated user engagement KPIs
+2025-10-31 16:23:59,243 - data_lake_processor - INFO - Generated content performance KPIs for 1000 movies
+2025-10-31 16:23:59,251 - data_lake_processor - INFO - Successfully generated content performance KPIs
+2025-10-31 16:23:59,251 - data_lake_processor - WARNING - Empty recommendation logs or movies data
+2025-10-31 16:23:59,268 - data_lake_processor - WARNING - Missing columns in users data: ['join_date', 'subscription_type']
+2025-10-31 16:23:59,276 - data_lake_processor - ERROR - Error generating retention KPIs: Can only use .dt accessor with datetimelike values
+2025-10-31 16:23:59,276 - data_lake_processor - INFO - Successfully generated KPIs for: user_engagement, content_performance
+2025-10-31 16:23:59,276 - data_lake_processor - WARNING - Failed to generate KPIs for: recommendation_effectiveness, user_retention
+2025-10-31 16:23:59,285 - data_lake_processor - INFO - Created gold layer summary at data\gold\gold_layer_summary.json
+2025-10-31 16:23:59,285 - __main__ - INFO - Pipeline completed successfully!
+2025-10-31 16:23:59,286 - __main__ - INFO - Generated KPIs:
+2025-10-31 16:23:59,286 - __main__ - INFO - 
+user_engagement:
+2025-10-31 16:23:59,286 - __main__ - INFO - Number of records: 10000
+2025-10-31 16:23:59,287 - __main__ - INFO - Columns: ['user_id', 'total_watches', 'total_duration', 'avg_duration', 'completed_watches', 'country', 'age', 'engagement_score']
+2025-10-31 16:23:59,287 - __main__ - INFO - 
+content_performance:
+2025-10-31 16:23:59,287 - __main__ - INFO - Number of records: 1000
+2025-10-31 16:23:59,287 - __main__ - INFO - Columns: ['movie_id', 'total_watches', 'total_duration', 'avg_duration', 'completed_watches', 'completion_rate', 'title', 'release_year', 'engagement_score']
+2025-10-31 16:29:47,166 - __main__ - INFO - Starting Netflix User Engagement Analytics Pipeline
+2025-10-31 16:29:47,168 - __main__ - INFO - Step 1: Creating Bronze Layer
+2025-10-31 16:29:47,197 - data_lake_processor - INFO - Converted age to numeric in users
+2025-10-31 16:29:47,198 - data_lake_processor - ERROR - Missing required columns in users: ['subscription_type', 'join_date']
+2025-10-31 16:29:47,198 - data_lake_processor - ERROR - Error processing users to bronze layer: Missing required columns in users: ['subscription_type', 'join_date']
+2025-10-31 16:29:47,199 - __main__ - ERROR - Pipeline failed: Missing required columns in users: ['subscription_type', 'join_date']
+2025-10-31 16:36:13,191 - __main__ - INFO - Starting Netflix User Engagement Analytics Pipeline
+2025-10-31 16:36:13,191 - __main__ - INFO - Step 1: Creating Bronze Layer
+2025-10-31 16:36:13,223 - data_lake_processor - INFO - Starting data validation and enrichment for users
+2025-10-31 16:36:13,260 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_163613.json
+2025-10-31 16:36:13,265 - data_quality - INFO - Added missing subscription_type with default 'basic'
+2025-10-31 16:36:13,413 - data_quality - INFO - Enriched join_date using watch_history data
+2025-10-31 16:36:13,433 - data_lake_processor - INFO - Converted join_date to datetime in users
+2025-10-31 16:36:13,435 - data_lake_processor - INFO - Converted age to numeric in users
+2025-10-31 16:36:13,499 - data_lake_processor - INFO - Processed users to bronze layer: 10300 records
+2025-10-31 16:36:13,499 - data_lake_processor - INFO - Starting data validation and enrichment for movies
+2025-10-31 16:36:13,511 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_163613.json
+2025-10-31 16:36:13,514 - data_lake_processor - INFO - Converted release_year to numeric in movies
+2025-10-31 16:36:13,515 - data_lake_processor - WARNING - Added missing optional column genre to movies
+2025-10-31 16:36:13,516 - data_lake_processor - WARNING - Added missing optional column duration to movies
+2025-10-31 16:36:13,516 - data_lake_processor - WARNING - Added missing optional column content_rating to movies
+2025-10-31 16:36:13,524 - data_lake_processor - INFO - Processed movies to bronze layer: 1040 records
+2025-10-31 16:36:13,646 - data_lake_processor - INFO - Starting data validation and enrichment for watch_history
+2025-10-31 16:36:13,842 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_163613.json
+2025-10-31 16:36:13,865 - data_quality - WARNING - Could not calculate completion status: "['duration'] not in index"
+2025-10-31 16:36:13,887 - data_lake_processor - INFO - Converted watch_date to datetime in watch_history
+2025-10-31 16:36:13,887 - data_lake_processor - WARNING - Added missing optional column watch_duration to watch_history
+2025-10-31 16:36:14,044 - data_lake_processor - INFO - Processed watch_history to bronze layer: 105000 records
+2025-10-31 16:36:14,074 - data_lake_processor - INFO - Starting data validation and enrichment for reviews
+2025-10-31 16:36:14,111 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_163614.json
+2025-10-31 16:36:14,115 - data_lake_processor - INFO - Converted review_date to datetime in reviews
+2025-10-31 16:36:14,115 - data_lake_processor - INFO - Converted rating to numeric in reviews
+2025-10-31 16:36:14,154 - data_lake_processor - INFO - Processed reviews to bronze layer: 15450 records
+2025-10-31 16:36:14,182 - data_lake_processor - INFO - Starting data validation and enrichment for search_logs
+2025-10-31 16:36:14,231 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_163614.json
+2025-10-31 16:36:14,250 - data_lake_processor - INFO - Converted search_date to datetime in search_logs
+2025-10-31 16:36:14,251 - data_lake_processor - WARNING - Added missing optional column results_clicked to search_logs
+2025-10-31 16:36:14,289 - data_lake_processor - INFO - Processed search_logs to bronze layer: 26500 records
+2025-10-31 16:36:14,364 - data_lake_processor - INFO - Starting data validation and enrichment for recommendation_logs
+2025-10-31 16:36:14,446 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_163614.json
+2025-10-31 16:36:14,485 - data_lake_processor - INFO - Converted recommendation_date to datetime in recommendation_logs
+2025-10-31 16:36:14,485 - data_lake_processor - WARNING - Added missing optional column clicked to recommendation_logs
+2025-10-31 16:36:14,568 - data_lake_processor - INFO - Processed recommendation_logs to bronze layer: 52000 records
+2025-10-31 16:36:14,568 - __main__ - INFO - Step 2: Performing data quality assessment
+2025-10-31 16:36:14,602 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_163614.json
+2025-10-31 16:36:14,602 - __main__ - INFO - Quality report for users saved to: data\quality_reports\quality_report_20251031_163614.json
+2025-10-31 16:36:14,614 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_163614.json
+2025-10-31 16:36:14,614 - __main__ - INFO - Quality report for movies saved to: data\quality_reports\quality_report_20251031_163614.json
+2025-10-31 16:36:14,786 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_163614.json
+2025-10-31 16:36:14,786 - __main__ - INFO - Quality report for watch_history saved to: data\quality_reports\quality_report_20251031_163614.json
+2025-10-31 16:36:14,814 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_163614.json
+2025-10-31 16:36:14,814 - __main__ - INFO - Quality report for reviews saved to: data\quality_reports\quality_report_20251031_163614.json
+2025-10-31 16:36:14,897 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_163614.json
+2025-10-31 16:36:14,898 - __main__ - INFO - Quality report for search_logs saved to: data\quality_reports\quality_report_20251031_163614.json
+2025-10-31 16:36:14,999 - data_quality - INFO - Saved quality report to data\quality_reports\quality_report_20251031_163614.json
+2025-10-31 16:36:15,000 - __main__ - INFO - Quality report for recommendation_logs saved to: data\quality_reports\quality_report_20251031_163614.json
+2025-10-31 16:36:15,000 - __main__ - INFO - Step 3: Creating Silver Layer
+2025-10-31 16:36:15,129 - data_lake_processor - INFO - Processed users to silver layer: 10000 records
+2025-10-31 16:36:15,146 - data_lake_processor - INFO - Processed movies to silver layer: 1000 records
+2025-10-31 16:36:15,285 - data_lake_processor - INFO - Processed watch_history to silver layer: 105000 records
+2025-10-31 16:36:15,285 - __main__ - INFO - Step 4: Creating Gold Layer
+2025-10-31 16:36:15,347 - data_lake_processor - INFO - Generated engagement KPIs for 10000 users
+2025-10-31 16:36:15,369 - data_lake_processor - INFO - Successfully generated user engagement KPIs
+2025-10-31 16:36:15,401 - data_lake_processor - INFO - Generated content performance KPIs for 1000 movies
+2025-10-31 16:36:15,403 - data_lake_processor - INFO - Successfully generated content performance KPIs
+2025-10-31 16:36:15,403 - data_lake_processor - WARNING - Empty recommendation logs or movies data
+2025-10-31 16:36:15,446 - data_lake_processor - ERROR - Error generating retention KPIs: 'subscription_type'
+2025-10-31 16:36:15,446 - data_lake_processor - INFO - Successfully generated KPIs for: user_engagement, content_performance
+2025-10-31 16:36:15,462 - data_lake_processor - WARNING - Failed to generate KPIs for: recommendation_effectiveness, user_retention
+2025-10-31 16:36:15,466 - data_lake_processor - INFO - Created gold layer summary at data\gold\gold_layer_summary.json
+2025-10-31 16:36:15,466 - __main__ - INFO - Pipeline completed successfully!
+2025-10-31 16:36:15,467 - __main__ - INFO - Generated KPIs:
+2025-10-31 16:36:15,467 - __main__ - INFO - 
+user_engagement:
+2025-10-31 16:36:15,467 - __main__ - INFO - Number of records: 10000
+2025-10-31 16:36:15,468 - __main__ - INFO - Columns: ['user_id', 'total_watches', 'total_duration', 'avg_duration', 'completed_watches', 'country', 'age', 'subscription_type', 'engagement_score']
+2025-10-31 16:36:15,468 - __main__ - INFO - 
+content_performance:
+2025-10-31 16:36:15,468 - __main__ - INFO - Number of records: 1000
+2025-10-31 16:36:15,468 - __main__ - INFO - Columns: ['movie_id', 'total_watches', 'total_duration', 'avg_duration', 'completed_watches', 'completion_rate', 'title', 'genre', 'release_year', 'engagement_score']
